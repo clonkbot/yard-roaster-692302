@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Caveat:wght@400;700&family=DM+Sans:wght@300;400;500;700&display=swap');
+
+:root {
+  --bev-green: #2ECC71;
+  --garden-dark: #27AE60;
+  --hot-coral: #FF6B6B;
+  --sunshine: #F4D03F;
+  --mint-wash: #F0FAF3;
+  --lemon-mist: #FFF9E6;
+  --potting-soil: #1A1A1A;
+  --clean-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--clean-white);
+  color: var(--potting-soil);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-accent {
+  font-family: 'Caveat', cursive;
+}
+
+.font-body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mint-wash);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bev-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--garden-dark);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--bev-green);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: var(--bev-green);
+  color: white;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Remove default input styles */
+input {
+  font-family: inherit;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Details/summary styling */
+details > summary {
+  cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
